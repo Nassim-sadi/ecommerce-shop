@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 0.25rem auto;
+  background-color: var(--secondary-clr);
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    li {
+      a {
+        text-transform: capitalize;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

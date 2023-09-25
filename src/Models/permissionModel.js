@@ -1,0 +1,15 @@
+import mongoose from 'mongoose';
+
+const permissionSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  description: String,
+});
+
+const Permission =
+  mongoose.model.permissions || mongoose.model('permissions', permissionSchema);
+
+export default Permission;
